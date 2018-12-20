@@ -1,0 +1,25 @@
+{% extends "main/main.html" %}
+{% block content %}
+<style>
+a:hover {color:red}
+.title {
+	color: red;
+	font-family: monospace;
+	opacity: 1;
+}
+</style>
+<div class="container-fluid">
+	<div class="row" style="background-color:rgba(0,0,0,0.9);">
+		<div>
+			<h1 class="title">Meditations</h2>
+		</div>
+	</div>
+	<div class="row" style="text-align:center; background-color:rgba(0,0,0,0.7);">
+		{% for post in object_list %}
+		<div style="text-align:left; padding-left:25%; padding-right:25%">
+			<h2 style="color:white"><div><a href="/blog/{{post.id}}">  {{ post.title }}</a></div>
+				<span style="font-family:monospace; font-size:small">{{ post.date|date:"Y-m-d" }} | {{ post.author }}</span></h2>
+		</div>
+		{% endfor %}
+	</div>
+{% endblock %}

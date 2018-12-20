@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Paradise Found</title>
+	<meta charset="utf-8" />
+  {% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+</head>
+
+<style type="text/css">
+	html,
+	body {
+		height:100%
+	}
+
+	p {
+		font-family: helvetica
+	}
+
+	.bg {
+		position: absolute;
+		/* Full height */
+		z-index: -1000
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		top:0;
+		left:0;
+		background-size: 100% auto;
+	}
+	.title {
+		font-family: monospace;
+		font-style: italic;
+		color: white;
+		text-decoration:none;
+	}
+	.container {
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		height:auto;
+		opacity: .75;
+	}
+	video {
+		min-height: 100%;
+		min-width: 100%;
+		position: fixed;
+	}
+	</style>
+	<style>a {text-decoration:none} a:link {color:white;} a:visited{color:white;} a:hover{color:red}</style>
+<body class="body" style="background-color:#f6f6f6;">
+	<div class="bg">
+		<video id="vid" preload loop autoplay muted>
+			<source src="https://g.redditmedia.com/F-bLtFRH3AcLdtjsuCgCDZjlBdVDGy5Qn_nk0ipc4ps.gif?fm=mp4&mp4-fragmented=false&s=43a32415505e6bfd58b5df6ff99cbf17" type="video/mp4">
+		</video>
+	</div>
+	<div class="container">
+		<div style="padding-top:25%">
+			<h1 class="title"><a href="/salvation" style="text-decoration:none">Break The Simulation</a></h1>
+			</div>
+		</div>
+</div>
+</body>
+</html>

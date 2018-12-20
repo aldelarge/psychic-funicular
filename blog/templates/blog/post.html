@@ -1,0 +1,28 @@
+{% extends "main/main.html" %}
+{% block content %}
+<style>
+	.content{
+		padding-left: 20%;
+		padding-right: 20%;
+		text-align: left;
+	}
+	.p {
+		opacity: 1;
+	}
+</style>
+<div class="container-fluid" style="background-color:rgba(0,0,0,0.9);">
+	<div class="row">
+		<h3><a href="/blog/{{post.id}}">{{ post.title }}</a></h3>
+		<p style="font-family:monospace"> on {{ post.date }}</p>
+		<p style="font-family:monospace"> by {{ post.author }}</p>
+	</div>
+	<hr>
+	<br>
+	<div class="row">
+		<div class="content">
+			<p style="font-family:monospace">{{ post.body|safe|linebreaks}}</p>
+		</div>
+		<br><br>
+	</div>
+</div>
+{% endblock %}

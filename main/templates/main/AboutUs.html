@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>About Paradise Corp.</title>
+	<meta charset="utf-8" />
+  {% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+</head>
+
+<style type="text/css">
+	html,
+	body {
+		height:100%
+	}
+
+	p {
+		font-family: helvetica;
+    color:white;
+	}
+  footer {
+    color:white;
+    position:absolute;
+    bottom:0;
+    left:0;
+    opacity: .5;
+  }
+	.bg {
+		position: absolute;
+		/* Full height */
+		z-index: -1000
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		top:0;
+		left:0;
+		background-size: 100% auto;
+	}
+
+
+  .no {
+    display: none;
+  }
+  .yes:hover {
+    display: none;
+  }
+  .no:hover {
+    display: inline;
+  }
+	.title {
+		font-family: monospace;
+		font-style: italic;
+		color: white;
+		text-decoration: none;
+	}
+
+  .title2 {
+    font-family: monospace;
+		font-style: italic;
+		color: red;
+		text-decoration: none;
+  }
+  .title2:hover {
+    display: inline
+  }
+
+	.container {
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		height:auto;
+		opacity: .75;
+	}
+	video {
+		min-height: 100%;
+		min-width: 100%;
+		position: fixed;
+	}
+  footer {
+    bottom: 0;
+    position: fixed;
+  }
+  </style>
+	<style>A {text-decoration: none; font-family:Courier New;} a:link {color:white;} a:visited{color:white;} a:hover{color:red}</style>
+<body class="body" style="background-color:#f6f6f6;">
+	<div class="bg">
+		<video id="vid" preload loop autoplay muted>
+			<source src="https://g.redditmedia.com/-8dTX224_E_PbWSGSDkP9OXM_PqpHysY0_npGubmknQ.gif?fm=mp4&mp4-fragmented=false&s=a2cde0b53290c86d4f614a25a95e291c" type="video/mp4">
+		</video>
+	</div>
+	<div class="container">
+    <div class="yes" style="padding-top:10%; text-align:center">
+    <h1 class="title">Paradise Group</h1>
+    </div>
+    <div class="no" style="padding-top:10%; text-align:center">
+    <h1 class="title">Temple Of Paradise</h1>
+    </div>
+    <br>
+    <div class="culton">
+      <p style="padding left:25%; color:white; opacity:.9"> We are a group dedicated to promoting free thrinking and an authentic lifestyle. </p>
+            <p style="padding left:25%; color:white; opacity:.9"> We are a group dedicated to promoting free thrinking and an authentic lifestyle. </p>
+                  <p style="padding left:25%; color:white; opacity:.9"> We are a group dedicated to promoting free thrinking and an authentic lifestyle. </p>
+                        <p style="padding left:25%; color:white; opacity:.9"> We are a group dedicated to promoting free thrinking and an authentic lifestyle. </p>
+                              <p style="padding left:25%; color:white; opacity:.9"> We am a group dedicated to promoting free thrinking and an authentic lifestyle. </p>
+                                    <p style="padding left:25%; color:white; opacity:.9"> We am a group dedicated to promoting free thrinking and an authentic lifestyle. </p>
+
+      <p style="padding left:25%; color:white; opacity:.9"> Don't you wish life could be paradise? </p>
+    </div>
+    <br>
+    <div style="padding left:25%; color:white; bottom:5"><a href="#" target="blank">Join Us</a></div>
+    </div>
+</div>
+<footer>
+  <div class="container-fluid" style='margin-left:15px'>
+    <p><a href="" target="blank">About Us</a> | <a href="/salvation/gospel/" target="blank">Gospel</a> | <a href="/salvation/" target="blank">home</a></span></p>
+  </div>
+</footer>
+</body>
+</html>

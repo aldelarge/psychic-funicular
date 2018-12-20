@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Paradise Found</title>
+	<meta charset="utf-8" />
+  {% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+</head>
+
+<style type="text/css">
+	html,
+	body {
+		height:100%
+	}
+
+	p {
+		font-family: helvetica;
+    color:white;
+	}
+  footer {
+    color:white;
+    position:absolute;
+    bottom:0;
+    left:0;
+    opacity: .5;
+  }
+	.bg {
+		/* The image used */
+		position: absolute;
+		/* Full height */
+		z-index: -1000
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		top:0;
+		left:0;
+		background-size: 100% auto;
+		/* Center and scale the image nicely */
+	}
+	.title {
+		font-family: monospace;
+		font-style: italic;
+		color: white;
+		text-decoration: none;
+	}
+	.container {
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		height:auto;
+		opacity: .75;
+	}
+	video {
+		min-height: 100%;
+		min-width: 100%;
+		object-fit: cover;
+		position: fixed;
+	}
+  footer {
+    bottom: 0;
+    position: fixed;
+  }
+  </style>
+	<style>A {text-decoration: none; font-family:Courier New;} a:link {color:white;} a:visited{color:white;} a:hover{color:red}</style>
+<body class="body" style="background-color:#f6f6f6;">
+	<div class="bg">
+		<video id="vid" preload loop autoplay muted>
+			<source src="https://g.redditmedia.com/AiUwd9I3bMIOOoPaLzZqqJWt1akQlo9AgjeZmS7ihzs.gif?fm=mp4&mp4-fragmented=false&s=a6fc6c0d7d922b365f0fcef35a11e8cf" type="video/mp4">
+		</video>
+	</div>
+	<div class="container">
+      {% block content %}
+        {% endblock %}
+</div>
+<footer>
+  <div class="container-fluid" style='margin-left:15px'>
+    <p><a href="/salvation/AboutUs/" target="blank">About Us</a> | <a href="/blog" target="blank">Gospel</a> | <a href="/salvation/" target="blank">home</a></span></p>
+  </div>
+</footer>
+</body>
+</html>
